@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-basic: 'Outfit', sans-serif;
+  --font-heading: 'Michroma', sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
