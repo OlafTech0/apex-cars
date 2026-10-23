@@ -5,7 +5,7 @@ import Porsche from "../assets/porsche.jpg"
 import MclarenLogo from "../assets/mclarenLogo.svg?react";
 import ChevroletLogo from "../assets/chevroletLogo.png"
 import PorscheLogo from "../assets/porscheLogo.svg"
-import { Pointer } from "lucide-react";
+import { ArrowUpRight, Eye } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLenis } from '../useLenis';
 
@@ -30,8 +30,18 @@ function MainPage() {
                     <h3 className="font-heading">McLaren P1</h3>
                     </div>
 
+                    <div className="group-hover:opacity-0 transition-opacity duration-300">
                   <p className="text-zinc-400 font-basic absolute bottom-12 right-28">Hover There</p>
-                  <Pointer size={55} className="text-zinc-400 absolute bottom-10 right-10" />
+                  <Eye size={50} className="text-zinc-400 absolute bottom-10 right-10" />
+                  </div>
+
+                  <div className="flex items-center gap-2 text-zinc-400 absolute bottom-12 right-11 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+                    <span className="font-basic text-md tracking-widest">VIEW</span>
+                     <ArrowUpRight size={35} />
+                     
+                    </div>
+
                   </motion.div>
                 
                 <div className="flex flex-col gap-16">
@@ -50,8 +60,16 @@ function MainPage() {
                     </div>
                  
 
-                 <Pointer size={40} className="text-zinc-400 absolute bottom-5 right-6" />
+                 <Eye size={40} className="text-zinc-400 absolute bottom-5 right-6 group-hover:opacity-0 transition-opacity duration-300" />
+
+                 <div className="flex items-center gap-2 text-zinc-400 absolute bottom-10 right-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+                    <span className="font-basic text-sm tracking-widest">VIEW</span>
+                     <ArrowUpRight size={20} />
+                     
+                    </div>
                  </motion.div>
+
 
                 <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -60,12 +78,20 @@ function MainPage() {
                 <img src={Porsche} className="max-h-[30vh] max-w-[90vw] w-auto object-contain
                  rounded border border-gray-500 transition-colors duration-200 group-hover:border-gray-200 shadow-2xl shadow-black " alt="Porsche" />
                     
-                    <div className="flex flex-row absolute bottom-10 left-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <div className="flex flex-row absolute bottom-7 left-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <img src={PorscheLogo} className="w-10" />
                     <h3 className="font-heading ml-2 mt-4">Porsche 911 GT3 RS</h3>
                     </div>
 
-                  <Pointer size={40} className="text-zinc-400 absolute bottom-5 right-6" />
+                  <Eye size={40} className="text-zinc-400 absolute bottom-5 right-6 group-hover:opacity-0 transition-opacity duration-300" />
+                  
+                  <div className="flex items-center gap-2 text-zinc-400 absolute bottom-10 right-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+                    <span className="font-basic text-sm tracking-widest">VIEW</span>
+                     <ArrowUpRight size={20} />
+                     
+                    </div>
+
                   </motion.div>
 
                 </div>
